@@ -1,0 +1,148 @@
+.searchBox {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+input[type=text],
+.pagination>li a {
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -ms-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+input[type=text] {
+  background-color: #fff;
+  color: #767676;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  height: auto;
+  font-family: 'Lato', sans-serif;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #dedede;
+  padding: 3px 15px 3px;
+  width: 100%;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  outline: none;
+  resize: none;
+}
+
+input[type=text]:hover,
+input[type=text]:focus {
+  border-color: #f3bb15;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  opacity: 0.8;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: 'Lato', sans-serif;
+  color: #666;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  opacity: 0.8;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: 'Lato', sans-serif;
+  color: #666;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  opacity: 0.8;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: 'Lato', sans-serif;
+  color: #666;
+}
+
+.listOfItems {
+  list-style: none outside none;
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 30px 0 0;
+  border-top: 1px solid #dedede;
+
+}
+
+.listOfItems>li {
+  display: block;
+  padding: 10px 15px;
+  border-bottom: 1px solid #dedede;
+}
+
+.listOfItems>li:nth-child(2n+1){
+  background: #efefef;
+}
+
+.pagination {
+  position: relative;
+  list-style: none outside none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.pagination>li {
+  display: block;
+}
+
+.pagination>li+li {
+  margin-left: 15px;
+}
+
+.pagination>li a{
+  cursor: pointer;
+}
+
+.pagination>li a, .pagination>li span {
+  display: block;
+  padding: 3px 10px;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #dedede;
+  min-height: 32px;
+}
+
+.pagination>li a.active,   .pagination > li a:hover, .pagination>li span {
+  color: #fff;
+  background: #f3bb15;
+  border-color: #f3bb15;
+}
+
+#go_prev.disabled, #go_next.disabled{
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+#emptyList{
+  display: none;
+}
+
+#emptyList.show{
+  display: block;
+}
+
+
+
